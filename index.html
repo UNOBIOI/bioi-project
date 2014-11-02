@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #header {
+        background-color:black;
+        color:white;
+        text-align:center;
+        padding:5px;
+    }
+    #nav {
+        width:35%;
+        float:left;
+        padding:5px;
+    }
+    #section {
+        width:350px;
+        float:left;
+        padding:10px;
+    }
+    #footer {
+        background-color:black;
+        color:white;
+        clear:both;
+        text-align:center;
+        padding:5px;
+    }
+</style>
+    <title>BioInformatics Tool Wrapper</title>
+</head>
+<body background="images/images2.jpg" bgpropeties="fixed">
+
+<div id="header">
+ <h1>Software Engineering Project</h1>
+ <h2>BioInformatics Tool Wrapper</h2>
+</div>
+
+<div id="nav">
+
+</div>
+
+<div id="section" >
+    <form>
+        <h3><u>1) Choose the tool(s) you want to use:</u></h3>
+        <h3>
+        <input type="checkbox" name="alignment" value="alignment">Alignment: BLAST<br>
+        <input type="checkbox" name="composition" value="composition">Composition<br>
+        <input type="checkbox" name="translation" value="translation">Translation<br>
+        <input type="checkbox" name="gene" value="gene">Gene Conservation Report<br>
+        </h3>
+        <h3><u>2) Insertion Method:</u></h3>
+        <h3>
+        <input type="radio" name="option" value="sequence">Insert Sequence<br>
+        <input type="radio" name="option" value="file">Input File<br>
+        <input type="text" name="value">
+        <input type="submit">
+        </h3>
+    </form>
+</div>
+
+<div id="footer">
+    @Tool Wrapper
+</div>
+</body>
+</html>

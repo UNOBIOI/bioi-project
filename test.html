@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Sample Web Form</title>
+    </head>
+<body>
+
+<h1>DNA Sequence Input</h1>
+<img src='DNA.jpg' alt='Unsequenced Regions of Chromosomes' width='400px'/>
+
+<form action="/cgi-bin/newtest.py" method="post">
+Enter DNA Sequence: <input type="text" name="seq">  <br />
+Or input FASTA file: <input type="file" name="fastafile"> <br />
+<select name="dropdown">
+<option value = "length">Length</option>
+<option value = "nucCount">Nucleotide Content</option>
+</select> <br />
+
+<input type="checkbox" name="alignment" value="alignment">Alignment: BLAST<br>
+<input type="checkbox" name="composition" value="composition">Composition<br>
+<input type="checkbox" name="translation" value="translation">Translation<br>
+<input type="checkbox" name="gene" value="gene">Gene Conservation Report<br>
+<input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>
